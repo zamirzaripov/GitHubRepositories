@@ -22,11 +22,15 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            isDebuggable = true
+
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
@@ -85,4 +89,7 @@ dependencies {
 
     //swipe refresh
     implementation("com.google.accompanist:accompanist-swiperefresh:0.33.1-alpha")
+
+    //navigation
+    implementation("androidx.navigation:navigation-compose:2.6.0")
 }

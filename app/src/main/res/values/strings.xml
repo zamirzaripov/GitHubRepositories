@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GitHub Repositories</string>
+    <string name="repos">Repos</string>
+    <string name="screen2">Screen2</string>
+    <string name="screen3">Screen3</string>
+    <string name="screen4">Screen4</string>
+    <string name="screen5">Screen5</string>
+    <string name="lang">Language</string>
 </resources>
